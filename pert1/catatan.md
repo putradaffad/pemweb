@@ -28,8 +28,8 @@ Agar website bisa berjalan dengan baik, beberapa konfigurasi dan struktur folder
 - Konfigurasi Nginx disesuaikan agar bisa melayani file statis dari folder proyek.  
 
 ### 🔹 Struktur Folder untuk Menyimpan Proyek  
-- **`src/`** → Folder ini digunakan untuk menyimpan file HTML, CSS, dan JavaScript yang dibuat untuk proyek website.  
-- **`nginx/`** → Menyimpan konfigurasi Nginx yang mengatur bagaimana web server merespons permintaan user.  
+- **`src`** → Folder ini digunakan untuk menyimpan file HTML, CSS, dan JavaScript yang dibuat untuk proyek website.  
+- **`nginx`** → Menyimpan konfigurasi Nginx yang mengatur bagaimana web server merespons permintaan user.  
 
 ## 4. Kesimpulan  
 - Memahami konsep dasar **website** sebelum mulai membangun proyek sangat penting.  

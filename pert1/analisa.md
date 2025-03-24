@@ -44,7 +44,7 @@ Materi yang dipelajari mencakup:
 ---
 
 ### 6️⃣ **How (Bagaimana Website Dibuat & Berjalan?)**  
-1. **Membuat Struktur Dasar** → Menyusun file HTML dalam folder **src/**.  
+1. **Membuat Struktur Dasar** → Menyusun file HTML dalam folder **src**.  
 2. **Menyiapkan Server** → Menggunakan **Nginx** untuk menampilkan halaman web.  
 3. **Mengelola Konfigurasi** → Menggunakan **docker-compose.yml & .env**.  
 4. **Menjalankan Website** → Menggunakan Docker untuk menjalankan server dan membuka website di browser.  
