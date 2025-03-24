@@ -1,53 +1,40 @@
-# 📝 Catatan Mengenai Website & HTML  
+# 📌 Catatan Pembelajaran Hari Ini  
 
-## 1️⃣ Refleksi Pribadi  
-Dapat disimpulkan bahwa **website** bukan sekadar kumpulan halaman di internet, tetapi juga merupakan alat yang sangat kuat dalam dunia digital saat ini. Website memiliki peran penting dalam berbagai aspek kehidupan, baik untuk individu, bisnis, maupun organisasi.  
+## 1. Apa yang Dipelajari  
+Hari ini belajar tentang **website** dan bagaimana cara melakukan **set up** untuk membuat sebuah website menggunakan **HTML**.  
 
-Di sisi lain, **HTML** adalah fondasi dari semua website yang ada. Meskipun sederhana, HTML tetap menjadi elemen utama dalam pengembangan web dan terus berkembang dengan fitur-fitur baru di HTML5.  
+## 2. Apa Itu Website & HTML?  
+### 🔹 Website  
+Website adalah kumpulan halaman web yang dapat diakses melalui internet menggunakan browser. Website bisa berisi teks, gambar, video, atau elemen interaktif lainnya. Secara umum, website dibagi menjadi dua jenis utama:  
+- **Website Statis** → Dibangun menggunakan HTML, CSS, dan JavaScript tanpa backend yang kompleks.  
+- **Website Dinamis** → Memiliki backend (server, database) untuk menyimpan dan mengolah data pengguna, biasanya menggunakan PHP, Python, atau Node.js.  
 
----
+### 🔹 HTML (HyperText Markup Language)  
+HTML adalah bahasa markup yang digunakan untuk membuat struktur dasar dari sebuah website. HTML tidak bersifat pemrograman seperti Python atau JavaScript, tetapi digunakan untuk menyusun elemen-elemen pada halaman web seperti:  
+- **Teks & Heading** → `<p>`, `<h1>` sampai `<h6>`  
+- **Gambar & Link** → `<img>` dan `<a>`  
+- **Tabel & Formulir** → `<table>`, `<form>`, `<input>`  
+- **Layout & Struktur** → `<div>`, `<section>`, `<article>`  
 
-## 2️⃣ Hal yang Menarik  
-- **Peran Website dalam Bisnis**  
-  Website telah menjadi kebutuhan utama dalam dunia bisnis. Tanpa website, perusahaan akan sulit bersaing di era digital.  
+## 3. Setup yang Dilakukan  
+Agar website bisa berjalan dengan baik, beberapa konfigurasi dan struktur folder dibuat, antara lain:  
 
-- **Kesederhanaan HTML, tapi Sangat Powerful**  
-  HTML terlihat sebagai bahasa yang sederhana, tetapi tanpa HTML, tidak akan ada website yang bisa ditampilkan di browser.  
+### 🔹 Membuat File Konfigurasi  
+- **`docker-compose.yml`** → Digunakan untuk mengatur layanan yang dibutuhkan dalam pengembangan web, seperti server web (Nginx) dan environment lainnya.  
+- **`.env`** → File ini menyimpan variabel lingkungan (environment variables) yang dibutuhkan dalam aplikasi.  
 
-- **SWOT Analysis yang Mengungkap Peluang & Ancaman**  
-  Analisis SWOT menunjukkan bahwa meskipun website memiliki banyak keuntungan, tetap ada tantangan besar seperti keamanan cyber dan perubahan algoritma mesin pencari.  
+### 🔹 Menggunakan Nginx sebagai Web Server  
+- **Nginx** dipakai untuk menangani request dari user dan mengarahkan ke halaman HTML yang dibuat.  
+- Konfigurasi Nginx disesuaikan agar bisa melayani file statis dari folder proyek.  
 
----
+### 🔹 Struktur Folder untuk Menyimpan Proyek  
+- **`src/`** → Folder ini digunakan untuk menyimpan file HTML, CSS, dan JavaScript yang dibuat untuk proyek website.  
+- **`nginx/`** → Menyimpan konfigurasi Nginx yang mengatur bagaimana web server merespons permintaan user.  
 
-## 3️⃣ Pelajaran yang Dapat Diambil  
-1. **Pentingnya Memiliki Website yang Optimal**  
-   - Website harus user-friendly, cepat, dan aman agar dapat bersaing.  
-   - SEO menjadi kunci dalam meningkatkan visibilitas website di mesin pencari.  
+## 4. Kesimpulan  
+- Memahami konsep dasar **website** sebelum mulai membangun proyek sangat penting.  
+- **HTML** adalah dasar dalam pembuatan website, tetapi perlu dikombinasikan dengan **CSS & JavaScript** agar lebih menarik dan interaktif.  
+- **Docker + Nginx** adalah kombinasi yang bagus untuk menjalankan website dengan konfigurasi yang lebih fleksibel.  
+- Menyusun struktur folder yang rapi akan membantu dalam pengelolaan proyek di masa depan.  
 
-2. **HTML Saja Tidak Cukup**  
-   - Untuk membuat website modern, HTML harus dikombinasikan dengan CSS dan JavaScript.  
-   - Framework seperti React atau Vue.js semakin populer dalam pengembangan frontend.  
-
-3. **Keamanan Website Sangat Penting**  
-   - Banyak website rentan terhadap serangan cyber jika tidak memiliki sistem keamanan yang baik.  
-   - Penggunaan HTTPS, firewall, dan backup data secara berkala sangat disarankan.  
-
----
-
-## 4️⃣ Rencana untuk Pengembangan Lebih Lanjut  
-✅ **Mempelajari Teknologi Web Lanjutan**  
-- Belajar lebih dalam tentang CSS (Flexbox, Grid) dan JavaScript (ES6, DOM Manipulation).  
-- Mengeksplorasi framework seperti React.js dan Vue.js untuk pengembangan web modern.  
-
-✅ **Eksperimen dengan SEO & Digital Marketing**  
-- Mempelajari teknik SEO untuk meningkatkan peringkat website.  
-- Menggunakan Google Analytics dan alat pemasaran digital lainnya untuk memahami perilaku pengguna.  
-
-✅ **Mengikuti Perkembangan HTML & Web Development**  
-- Mengikuti update terbaru dari W3C mengenai HTML5 dan standar web lainnya.  
-- Mengamati tren terbaru dalam UI/UX untuk mendesain website yang lebih menarik.  
-
----
-
-## 5️⃣ Kesimpulan Akhir  
-Website dan HTML adalah dua elemen fundamental yang tidak bisa dipisahkan. Memahami dasar-dasarnya adalah langkah pertama dalam dunia pengembangan web, tetapi untuk membangun website yang sukses, perlu pemahaman lebih dalam mengenai desain, keamanan, dan optimasi. Dengan terus belajar dan mengikuti perkembangan teknologi, kita bisa menciptakan website yang tidak hanya menarik, tetapi juga bermanfaat bagi banyak orang. 🚀  
+Pembelajaran ini jadi langkah awal untuk lebih memahami pengembangan web, dan ke depannya bisa lanjut dengan menambahkan fitur interaktif menggunakan **CSS & JavaScript**! 🚀  
