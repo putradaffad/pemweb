@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Putra Daffa | Web Pribadi</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #fdfdfd;
+    }
+    .profile-img {
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-light sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Putra Daffa</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skill">Skill</a></li>
+        <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PROFILE -->
+<section class="container text-center mt-5">
+    <img src="../latihan/image/photo1.jpg" 
+    class="rounded-circle profile-img mb-3" 
+    alt="Foto Profil" 
+    style="width: 120px; height: 120px; object-fit: cover;">
+  <h4>Putra Daffa Dwiyansah</h4>
+  <p class="text-muted">Teknik Informatika - Fakultas Ilmu Komputer</p>
+  <span class="badge bg-primary">Tangerang</span>
+  <span class="badge bg-secondary">19 Juni 2005</span>
+</section>
+
+<!-- ABOUT -->
+<section class="container mt-5" id="about">
+  <h5 class="text-center mb-3">Tentang Saya</h5>
+  <div class="accordion" id="accordionAbout">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+          Perkenalan
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionAbout">
+        <div class="accordion-body">
+            Saya adalah mahasiswa Teknik Informatika dari Universitas Esa Unggul Tangerang yang memiliki ketertarikan di bidang teknologi, khususnya pengembangan web dan software. Saya terus mengembangkan keterampilan teknis dan kreatif saya agar dapat berkontribusi di dunia digital yang terus berkembang.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="container mt-5" id="skill">
+  <h5 class="text-center mb-3">Kemampuan</h5>
+  <div class="row text-center">
+    <div class="col-md-4 mb-3">
+      <div class="card p-3 shadow-sm">
+        <i class="fab fa-html5 fa-2x text-danger mb-2"></i>
+        <h6>HTML</h6>
+        <div class="progress" style="height: 8px;">
+          <div class="progress-bar bg-danger" style="width: 90%;"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="card p-3 shadow-sm">
+        <i class="fab fa-css3-alt fa-2x text-primary mb-2"></i>
+        <h6>CSS</h6>
+        <div class="progress" style="height: 8px;">
+          <div class="progress-bar bg-primary" style="width: 85%;"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="card p-3 shadow-sm">
+        <i class="fas fa-code fa-2x text-dark mb-2"></i>
+        <h6>C++</h6>
+        <div class="progress" style="height: 8px;">
+          <div class="progress-bar bg-dark" style="width: 75%;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT & LINKS -->
+<section class="container mt-5 mb-5" id="kontak">
+  <h5 class="text-center mb-3">Temukan Saya</h5>
+  <div class="list-group">
+    <a href="https://putradaffad.github.io" target="_blank" class="list-group-item list-group-item-action">
+      <i class="fas fa-globe text-primary me-2"></i> Website
+    </a>
+    <a href="https://instagram.com/putradaffad" target="_blank" class="list-group-item list-group-item-action">
+      <i class="fab fa-instagram text-danger me-2"></i> Instagram
+    </a>
+    <a href="https://github.com/putradaffad" target="_blank" class="list-group-item list-group-item-action">
+      <i class="fab fa-github me-2"></i> GitHub
+    </a>
+    <a href="https://web.facebook.com/ptra.daffa" target="_blank" class="list-group-item list-group-item-action">
+      <i class="fab fa-facebook text-primary me-2"></i> Facebook
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-light py-3 text-center">
+  <p class="mb-0 text-muted">&copy; 2025 Putra Daffa</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
