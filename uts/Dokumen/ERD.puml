@@ -1,0 +1,29 @@
+@startuml
+entity "customers" as Customers {
+  *id : integer <<PK>>
+  --
+  name : string
+  identity_number : string
+  phone : string
+  address : text
+  email : string
+  status : string
+  notes : text
+  created_at : datetime
+  updated_at : datetime
+}
+
+entity "rental_histories" as RentalHistories {
+  *id : integer <<PK>>
+  --
+  customer_id : integer <<FK>>
+  vehicle : string
+  rental_date : date
+  duration_days : integer
+  created_at : datetime
+  updated_at : datetime
+}
+
+Customers ||--o{ RentalHistories : has
+
+@enduml

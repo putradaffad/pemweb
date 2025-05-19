@@ -1,0 +1,15 @@
+@startuml
+left to right direction
+
+actor Admin
+
+rectangle "Sistem Rental Mobil" {
+  Admin --> (Lihat Data Pelanggan)
+  Admin --> (Tambah Pelanggan)
+  Admin --> (Edit Pelanggan)
+  Admin --> (Hapus Pelanggan)
+  Admin --> (Lihat Riwayat Rental)
+  Admin --> (Tambah Riwayat Rental)
+}
+
+@enduml
